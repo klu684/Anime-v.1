@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="1dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:elevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img_background"
+                android:src="@drawable/swordart_bg"
+                android:scaleType="centerCrop"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:transitionName="selectedMovie"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:alpha=".4"
+                android:id="@+id/vw_blacklayer" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:id="@+id/img_cover_d"
+                android:src="@drawable/sword_art"
+                android:scaleType="centerCrop"
+                app:riv_border_width="2dip"
+                app:riv_border_color="#ffffff"
+                android:layout_marginBottom="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Sword Art Online"
+                android:id="@+id/txt_movie_details"
+                android:singleLine="true"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/img_cover_d"
+                android:layout_toRightOf="@+id/img_cover_d"
+                android:layout_toEndOf="@id/img_cover_d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="The year is 2022, and gamers have lined up on launch day for Sword Art Online, a hotly-anticipated MMORPG that lets players connect to an immersive virtual reality world with special helmets called Nerve Gear. Kirito is one such gamer who's eager to jump back into action, having spent a great deal of time as a beta tester, and quickly becomes friends with newbie warrior Klein. But soon, Sword Art Online's 10,000 players discover that not only are they unable to log out, the only way they can return to their physical bodies is by beating the 100-level tower's final boss - death in the game means death in the real world. Now, with no one else to turn to, Kirito and the other participants must survive the game as best they can."
+                android:id="@+id/txt_plot_d"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:lines="3"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/txt_movie_details"
+                android:layout_toRightOf="@+id/img_cover_d"
+                android:layout_toEndOf="@+id/img_cover_d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="o Release date: March 25, 2016"
+                android:id="@+id/txt_release_d"
+                android:textColor="#ffffff"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:layout_below="@+id/txt_plot_d"
+                android:layout_toRightOf="@+id/img_cover_d"
+                android:layout_toEndOf="@+id/img_cover_d" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
